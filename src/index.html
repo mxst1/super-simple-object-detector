@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AI Detector</title>
+	</head>
+	<body>
+		<center>
+			<h1>Upload an Image</h1>
+			<form action="/upload" method="POST" enctype="multipart/form-data">
+				<input type="file" name="file" accept="image/*" required />
+				<button type="submit">Upload Image</button>
+			</form>
+			<h2>Processed Image:</h2>
+			<img
+				src="./images/detected.jpg"
+				alt="Processed Image"
+				width="300px"
+				id="displayed-image"
+			/>
+		</center>
+	</body>
+</html>
